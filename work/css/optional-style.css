@@ -25,7 +25,8 @@
    background: url("../img/IMG_0071_main.jpg") no-repeat 50% 50%;
    overflow: hidden;
 }
-.main-title {
+
+.main-copy {
   position: relative;
   text-align: center;
   color: #FFFFFF;
@@ -61,9 +62,9 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
-  margin-top: 10px;
   clear: both;
   position: relative;
+  margin:0.5em 0 2em 0;
 }
 .card-img{
   float: left;
@@ -167,13 +168,45 @@ p.card-img-thumb {
   color: #0090aa;
 }
 
+
+/* -------------------------------
+  # div for prototype
+----------------------------------  */
+.group{
+  padding: 2em 0;
+  border-bottom: 1px; 
+}
+
+/* -------------------------------
+  # tab
+----------------------------------  */
+
+
+/* -------------------------------
+  # 1 column article (for Smart Phone)
+  # this must be BEFORE PC ver
+----------------------------------  */
+.img_size{
+  width: 100%;
+}
+
+.clear{
+  clear: both;
+}
+
 /* -------------------------------
   # footer
 ----------------------------------  */
-footer {
+.footer {
   text-align: center;
   padding: 0.5ex;
-    position: absolute;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
+
+.copyright{
+  position: relative;
+}
+
+
