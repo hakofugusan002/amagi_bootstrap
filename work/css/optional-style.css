@@ -25,48 +25,10 @@
 }
 
 /* -------------------------------
-  # card design (for PC)
+  # card design (for Smart Phone)
+  # this must be BEFORE PC ver
 ----------------------------------  */
 .card {
-  width: 100%;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px #ccc;
-}
-.card-img {
-}
-p.card-img-thumb{
-  border-radius: 5px 5px 0 0;
-  display: block;
-  width: 100%;     /*トリミング後の横幅*/
-  height: 180px;   /*トリミング後の縦幅*/
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-.card-img-thumb-src {
-  float: left;
-  position: absolute;
-}
-.card-block {
-  padding: 0px 10px 5px 10px;
-}
-.card-block-title {
-  text-align: left;
-  color: #333;
-  height : 45px;
-}
-.card-block-text {
-  color: #777;
-  line-height: 1.5;
-  height : 125px;
-  overflow: hidden;
-}
-
-/* -------------------------------
-  # card design (for Smart Phone)
-----------------------------------  */
-.card-xs {
   width: 100%;
   height: 240px;
   background: #fff;
@@ -76,11 +38,11 @@ p.card-img-thumb{
   clear: both;
   position: relative;
 }
-.card-xs-img{
+.card-img{
   float: left;
   width: 40%;
 }
-p.card-xs-img-thumb {
+p.card-img-thumb {
   border-radius: 5px 0 0 5px;
   display: block;
   width: 100%;     /*トリミング後の横幅*/
@@ -89,25 +51,76 @@ p.card-xs-img-thumb {
   position: relative;
   z-index: 1;
 }
-.card-xs-img-thumb-src {
+.thumb-src {
   float: left;
   position: absolute;
 }
-.card-xs-block {
+.card-block {
   width: 50%;
   padding: 5px;
   float: left;
 }
-.card-xs-block-title {
+.card-block-title {
   text-align: left;
   color: #333;
   height : 45px;
 }
-.card-xs-block-text {
+.card-block-text {
   color: #777;
   line-height: 1.5;
   height : 170px;
   overflow: hidden;
+}
+
+/* -------------------------------
+  # card design (for PC).
+  # this must be AFTER smart phone ver.
+  # ALL atributes must be overwrote.
+----------------------------------  */
+@media (min-width: 768px) {
+  .card {
+    width: 100%;
+    height: 380px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    margin-top: 0px;
+    clear: both;
+    position: static;
+  }
+  .card-img {
+    float: none;
+    width: 100%;
+  }
+  p.card-img-thumb{
+    border-radius: 5px 5px 0 0;
+    display: block;
+    width: 100%;     /*トリミング後の横幅*/
+    height: 180px;   /*トリミング後の縦幅*/
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .thumb-src {
+    float: left;
+    position: absolute;
+  }
+  .card-block {
+    width: 100%;
+    padding: 0px 10px 5px 10px;
+    float: none;
+  }
+  .card-block-title {
+    text-align: left;
+    color: #333;
+    height : 45px;
+  }
+  .card-block-text {
+    color: #777;
+    line-height: 1.5;
+    height : 125px;
+    overflow: hidden;
+  }
 }
 
 /* -------------------------------
