@@ -1,3 +1,20 @@
+
+/* gloval navi */
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0 15px;
+  width: auto;
+}
+
+.haeder-padding{
+  padding:0 0 0 1em;
+}
+
+
 /*# main visual */
 
 .main-image {
@@ -11,19 +28,43 @@
 }
 
 .main-title {
-  position: absolute;
-  top: 0;
+  position: relative;
   text-align: center;
+  color: #FFFFFF;
+  padding: 0 2em 0 2em;
 }
 
+.main-text {
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 2em 1em 2em;
+}
+
+/*# container */
+.container{
+  padding: 0 0 2em 0;
+}
+
+/*# h2 */
+.h2_center{
+  text-align: center;
+  padding: 0 0 1em 0;
+}
 
 /*# card part */
+.card-layout{
+  width: 100%;
+}
+
 .card {
   width: 100%;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
 }
+
 .card-img-top {
   border-radius: 5px 5px 0 0;
   max-width: 100%;
@@ -58,4 +99,13 @@
 }
 .card-link a:hover {
   color: #0090aa;
+}
+
+/*# footer */
+footer {
+  text-align: center;
+  padding: 0.5ex;
+    position: absolute;
+  bottom: 0;
+  width: 100%;
 }
