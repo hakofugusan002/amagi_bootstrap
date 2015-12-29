@@ -1,5 +1,6 @@
-/*# main visual */
-
+/* -------------------------------
+  # main visual 
+----------------------------------  */
 .main-image {
    position: relative;
 /* height: 200px;*/
@@ -9,43 +10,109 @@
    background: url("../img/IMG_0071_main.jpg") no-repeat 50% 50%;
    overflow: hidden;
 }
-
 .main-title {
-  position: absolute;
-  top: 0;
+  position: relative;
   text-align: center;
+  color: #FFFFFF;
+  font-size: 2.5em;
+  padding: 0 10px 0 10px;
+}
+.main-text {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFFFFF;
 }
 
-
-/*# card part */
+/* -------------------------------
+  # card design (for PC)
+----------------------------------  */
 .card {
   width: 100%;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
 }
-.card-img-top {
+.card-img {
+}
+p.card-img-thumb{
   border-radius: 5px 5px 0 0;
-  max-width: 100%;
-  height: auto;
+  display: block;
+  width: 100%;     /*トリミング後の横幅*/
+  height: 180px;   /*トリミング後の縦幅*/
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
-
+.card-img-thumb-src {
+  float: left;
+  position: absolute;
+}
 .card-block {
-  padding: 20px
+  padding: 0px 10px 5px 10px;
 }
-
-.card-title {
-  font-size: 20px;
-  margin-bottom: 20px;
+.card-block-title {
   text-align: left;
   color: #333;
+  height : 45px;
 }
-.card-text {
+.card-block-text {
   color: #777;
-  font-size: 14px;
   line-height: 1.5;
-
+  height : 125px;
+  overflow: hidden;
 }
+
+/* -------------------------------
+  # card design (for Smart Phone)
+----------------------------------  */
+.card-xs {
+  width: 100%;
+  height: 240px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin-top: 10px;
+  clear: both;
+  position: relative;
+}
+.card-xs-img{
+  float: left;
+  width: 40%;
+}
+p.card-xs-img-thumb {
+  border-radius: 5px 0 0 5px;
+  display: block;
+  width: 100%;     /*トリミング後の横幅*/
+  height: 240px;   /*トリミング後の縦幅*/
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.card-xs-img-thumb-src {
+  float: left;
+  position: absolute;
+}
+.card-xs-block {
+  width: 50%;
+  padding: 5px;
+  float: left;
+}
+.card-xs-block-title {
+  text-align: left;
+  color: #333;
+  height : 45px;
+}
+.card-xs-block-text {
+  color: #777;
+  line-height: 1.5;
+  height : 170px;
+  overflow: hidden;
+}
+
+/* -------------------------------
+  # card design (common)
+----------------------------------  */
 .card-link {
   text-align: center;
   border-top: 1px solid #eee;

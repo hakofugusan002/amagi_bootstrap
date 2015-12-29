@@ -21,86 +21,197 @@
     <![endif]-->
   </head>
   <body>
+    <!-- main navigatio -->
     <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- 2.ヘッダ情報 -->
+      <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand">あまぎナチュラルストア</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">タイトル</a>
         </div>
-        <!-- 3.リストの配置 -->
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">ジビエ</a></li>
-            <li><a href="#">キノコ</a></li>
+    
+        <div class="collapse navbar-collapse" id="navbarEexample">
+          <ul class="nav navbar-nav">
+            <li><a href="#">ジビエ <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">キノコ</a></li>
             <li><a href="#">川魚</a></li>
-            <li><a href="#">その他の商品</a></li>
-            <li><a href="#">店長ブログ</a></li>
-            <li><a href="#">ここで食べられます！</a></li>
-        </ul>
-        <!-- 4.ボタン -->
-        <button type="button" class="btn btn-default navbar-btn">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">その他の商品 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">リンク・リスト１</a></li>
+                <li><a href="#">リンク・リスト２</a></li>
+                <li><a href="#">リンク・リスト３</a></li>
+              </ul>
+            </li>
+            <li><a href="#">店長ブログ</a></li> 
+            <li><a href="#">ここで食べられます！</a></li> 
+          </ul>
+          <button type="button" class="btn btn-default navbar-btn navbar-right">
             <span class="glyphicon glyphicon-envelope"></span>&nbsp;お問い合わせ
-        </button>
+          </button>
+        </div>
       </div>
     </nav>
-    
+
+    <!-- contents area -->
     <section class="container-fluid">
       <div class="row">
-       <div class="main-image">
-        <h1 class="main-title">肉画像</h1>
-       </div>
+        <div class="main-image">
+          <h1 class="main-title">ジビエのおいしい冬がやってきました。</h1>
+          <p class="main-text">
+            おいしいしい鹿肉のハンバーグです。召し上がれ！おいしいしい鹿肉のハンバーグです。召し上がれ！おいしいしい鹿肉のハンバーグです。召し上がれ！
+          </p> 
+        </div>
       </div>
     </section>
 
-    <section class="container">
-      <!-- Bootstrapのグリッドシステムclass="row"で開始 -->
+    <section class="container-fluid">
+      <div class="row">
+        <h2 class="head-line">採れたて食材、発売中！</h2>
+      </div>
+
       <div class="row">
         <!-- グリッドシステムとは：合計12分割 -->
-        <div class="col-sm-3">
-          <div class="card">
-            <img class="card-img-top" img src="../img/IMG_0002_light.jpg" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
+        <div class="col-sm-1">
+          <!-- this is bank -->
         </div>
-        <div class="col-sm-3">
-          <div class="card">
-            <img class="card-img-top" img src="../img/IMG_0002_light.jpg" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Button</a>
+        <div class="col-sm-10">
+          <!-- カード領域：PC＝３カラム、スマホ＝１カラム -->
+          <!-- PC用 -->
+          <div class="col-sm-4 hidden-xs">
+            <div class="card">
+              <div class="card-img">
+                <p class="card-img-thumb">
+                <img class="card-img-thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
+                </p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-block-title">Card title</h4>
+                <p class="card-block-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  this text is for overflow test; 
+                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
+                  その風邪に即戦力
+                </p>
+              </div>
             </div>
           </div>
+          <!-- スマホ用 -->
+          <div class="visible-xs">
+            <div class="card-xs">
+              <div class="card-xs-img">
+                <p class="card-xs-img-thumb">
+                <img class="card-xs-img-thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
+                </p>
+              </div>
+              <div class="card-xs-block">
+                <h4 class="card-xs-block-title">Card title</h4>
+                <p class="card-xs-block-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  this text is for overflow test; 
+                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
+                  その風邪に即戦力
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- PC用 -->
+          <div class="col-sm-4 hidden-xs">
+            <div class="card">
+              <div class="card-img">
+                <p class="card-img-thumb">
+                <img class="card-img-thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
+                </p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-block-title">Card title</h4>
+                <p class="card-block-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  this text is for overflow test; 
+                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
+                  その風邪に即戦力
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- スマホ用 -->
+          <div class="visible-xs">
+            <div class="card-xs">
+              <div class="card-xs-img">
+                <p class="card-xs-img-thumb">
+                <img class="card-xs-img-thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
+                </p>
+              </div>
+              <div class="card-xs-block">
+                <h4 class="card-xs-block-title">Card title</h4>
+                <p class="card-xs-block-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  this text is for overflow test; 
+                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
+                  その風邪に即戦力
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PC用 -->
+          <div class="col-sm-4 hidden-xs">
+            <div class="card">
+              <div class="card-img">
+                <p class="card-img-thumb">
+                <img class="card-img-thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
+                </p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-block-title">Card title</h4>
+                <p class="card-block-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  this text is for overflow test; 
+                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
+                  その風邪に即戦力
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- スマホ用 -->
+          <div class="visible-xs">
+            <div class="card-xs">
+              <div class="card-xs-img">
+                <p class="card-xs-img-thumb">
+                <img class="card-xs-img-thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
+                </p>
+              </div>
+              <div class="card-xs-block">
+                <h4 class="card-xs-block-title">Card title</h4>
+                <p class="card-xs-block-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  this text is for overflow test; 
+                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
+                  その風邪に即戦力
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
-        <div class="col-sm-3">
-          <div class="card">
-            <img class="card-img-top" data-src="" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
+        <div class="col-sm-1">
+          <!-- this is bank -->
         </div>
-        <div class="col-sm-3">
-          <div class="card">
-            <img class="card-img-top" data-src="" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
       </div>
-    </section>
+
+     </section>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/optional-js.js"></script>
   </body>
 </html>
