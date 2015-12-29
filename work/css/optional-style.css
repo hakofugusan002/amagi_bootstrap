@@ -32,7 +32,6 @@
   color: #FFFFFF;
   padding: 0 2em 0 2em;
 }
-
 .main-text {
   position: relative;
   font-size: 1.2em;
@@ -40,7 +39,6 @@
   color: #FFFFFF;
   padding: 0 2em 1em 2em;
 }
-
 /*# container */
 .container{
   padding: 0 0 2em 0;
@@ -195,6 +193,125 @@ p.card-img-thumb {
 }
 
 /* -------------------------------
+  # commodity : main image
+----------------------------------  */
+.commodity {
+  padding-bottom: 5%;
+}
+.commodity-main {
+  padding-bottom: 0;
+}
+.commodity-main-thumb {
+  padding: 20px 0px 0px 0px;
+  overflow: hidden;
+  width: 100%;
+  list-style-type: none;
+}
+.commodity-main-thumb li {
+  float: left;
+  width: 25%;
+/*  padding: 0px 20px 0px 0px; */
+  padding: 10px;
+}
+.commodity-main-thumb li img {
+  width: 100%;
+  opacity: 0.5;
+  filter: alpha(opacity=50); 
+  border: solid 1px;
+}
+.commodity-main-thumb li.current img {
+  width: 100%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  border: solid 1px;
+}
+.commodity-main-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.commodity-main-img img {
+  position: absolute;
+  top:0;
+  width: 100%;
+  border: solid 1px;
+}
+
+/* -------------------------------
+  # commodity : other part meat
+----------------------------------  */
+.commodity-other {
+  padding-top: 10%;
+  padding-bottom: 90%;
+  clear: both;
+}
+@media (min-width: 768px) {
+  .commodity-other {
+    padding-top: 10%;
+    padding-bottom: 0%;
+    clear: both;
+  }
+}
+.commodity-other-part-img {
+  width: 100%;
+  border: solid 1px;
+}
+.commodity-other-part-caption {
+  text-align: left;
+}
+
+/* -------------------------------
+  # commodity : other classes
+----------------------------------  */
+.commodity-title {
+  padding: 0px;
+}
+.commodity-info {
+  padding: 1% 0% 3% 0%;
+  border: solid 1px;
+  margin-bottom: 5%;
+}
+.commodity-info-title {
+  padding: 0% 0% 1% 3%;
+  font-size: 1.2em;
+}
+.commodity-info-main {
+  padding: 0% 5%;
+}
+
+/* -------------------------------
+  # recipies and other information
+----------------------------------  */
+.information {
+  border-top: solid 1px;
+  width: 100%;
+  padding-bottom: 5%;
+  clear: both;
+}
+.information-title {
+  padding: 3% 0%;
+}
+.information-item {
+  padding-top: 0;
+}
+.information-item-img {
+  width: 100%;
+  border: solid 1px;
+}
+.information-item-date {
+  text-align: left;
+  font-size: 0.8em;
+}
+.information-item-title {
+  margin-top: -2%;
+  text-align: left;
+  font-size: 1.2em;
+}
+.information-item-more {
+  padding-top: 30%;
+}
+
+/* -------------------------------
   # footer
 ----------------------------------  */
 .footer {
@@ -208,5 +325,3 @@ p.card-img-thumb {
 .copyright{
   position: relative;
 }
-
-

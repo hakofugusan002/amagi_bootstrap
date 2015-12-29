@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- additional style made by myself  -->
+    <link href="../css/optional-style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- main navigatio 1 -->
+    <!-- <div class="container">-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header haeder-padding">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">ジビエ</a></li>
+            <li><a href="#">キノコ</a></li>
+            <li><a href="#">川魚</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">その他の商品<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#">店長ブログ</a></li>
+            <li><a href="#">ここで食べられます！</a></li>
+          </ul>
+          <button type="button" class="btn btn-default navbar-btn navbar-right">
+           <span class="glyphicon glyphicon-envelope"></span>&nbsp;お問い合わせ
+          </button>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+
+    <!-- contents area -->
+    <section class="container-fluid commodity">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="col-sm-6 col-xs-12">
+              <div class="col-sm-12 col-xs-12">
+                <h1 class="commodity-title">豚肉</h1>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="col-sm-6 col-xs-12">
+            <!-- 画像 -->
+            <div class="commodity-main">
+              <div class="col-sm-12 col-xs-12">
+                <!-- メイン画像。JSでIMGタグを挿入する -->
+                <div class="commodity-main-img">
+                </div>
+                <!-- サムネイル画像 -->
+                <ul class="commodity-main-thumb">
+                    <li><a href="../img/IMG_0002_light.jpg"><img src="../img/IMG_0002_light.jpg" alt="photo1" /></a></li>
+                    <li><a href="../img/IMG_0071_main.jpg"><img src="../img/IMG_0071_main.jpg" alt="photo2" /></a></li>
+                    <li><a href="../img/IMG_0002_light.jpg"><img src="../img/IMG_0002_light.jpg" alt="photo1" /></a></li>
+                    <li><a href="../img/IMG_0071_main.jpg"><img src="../img/IMG_0071_main.jpg" alt="photo2" /></a></li>
+                    <li><a href="../img/IMG_0002_light.jpg"><img src="../img/IMG_0002_light.jpg" alt="photo1" /></a></li>
+                    <li><a href="../img/IMG_0071_main.jpg"><img src="../img/IMG_0071_main.jpg" alt="photo2" /></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 他の部位 -->
+            <div class="commodity-other">
+              <div class="col-sm-6 col-xs-6 commodity-other-part">
+                <img class="commodity-other-part-img" src="../img/IMG_0002_light.jpg" alt="モモ　1kg">
+                <p class="commodity-other-part-caption">モモ　1kg</p>
+              </div>
+              <div class="col-sm-6 col-xs-6 commodity-other-part">
+                <img class="commodity-other-part-img" src="../img/IMG_0002_light.jpg" alt="ロース　1kg">
+                <p class="commodity-other-part-caption">ロース　1kg</p>
+              </div>
+              <div class="col-sm-6 col-xs-6 commodity-other-part">
+                <img class="commodity-other-part-img" src="../img/IMG_0002_light.jpg" alt="ひき肉　1kg">
+                <p class="commodity-other-part-caption">ひき肉　1kg</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <!-- 食材の特徴 -->
+            <div class="commodity-info">
+              <h3 class="commodity-info-title">
+                【食材の特徴】
+              </h3>
+              <div class="commodity-info-main">
+                <p>
+                  島根県邑知郡見延町。<BR>
+                  豊かな自然が産んだ野生の猪「おおち山くじら」。<BR>
+                  冬と夏。季節によって異なる香りを、同時にお楽しみいただけるセットです。<BR>
+                </p>
+                <p>
+                  冬猪のバラ肉<BR>
+                  厳しい冬に備え、豊か森の木の実をたくさん食べています。<BR>
+                  上質な脂身をお楽しみください。<BR>
+                </p>
+                <p>
+                  夏猪のモモ肉<BR>
+                  新芽やたけのこなどの山の恵を食べているため歯切れよく、あっさりとした赤みが特徴です。<BR>
+                </p>
+              </div>
+            </div>
+            <!-- 商品パッケージ -->
+            <div class="commodity-info">
+              <h3 class="commodity-info-title">
+                【商品パッケージ】
+              </h3>
+              <div class="commodity-info-main">
+                <ul>
+                  <li>モモ　1kg</li>
+                  <li>ロース　1kg</li>
+                  <li>バラノカタ　1kg</li>
+                  <li>ひき肉　1kg</li>
+                  <li>骨　1kg</li>
+                </ul>
+                <p>
+                ※ご注文は2kg〜承ります。
+                </p>
+              </div>
+            </div>
+            <!-- 店長からのアドバイス -->
+            <div class="commodity-info">
+              <h3 class="commodity-info-title">
+                【店長からのワンポイントアドバイス】
+              </h3>
+              <div class="commodity-info-main">
+                <p>天城の歯科は天城山に生えている笹を食べているので、全く臭みがなく、食べやすいです</p>
+                <p>鹿肉はジビエなので、寄生虫がいる可能性があります。焼き加減については、レアは避けてください</p>
+                <p>焼き加減としては、片面だけ乗せて、肉汁が出てきて、うっすらピンク色になったら、裏面にかえして数秒。浮いてきた肉汁が茶色くなったら食べごろです。 </p>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-envelope"></span>&nbsp;お問い合わせはこちら！
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- other informations section -->
+    <section class="container-fluid information">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-center">
+          <h2 class="information-title">美味しさを引き出す</h2>
+        </div>
+      </div>
+      <!-- おすすめ記事：３カラム -->
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="col-sm-4 col-xs-12 information-item">
+            <img class="information-item-img hidden-xs" src="../img/IMG_0002_light.jpg" alt="自然保護">
+            <p class="information-date">2015.12.28</p>
+            <h3 class="information-item-title">ジビエと自然保護</h3>
+          </div>
+          <div class="col-sm-4 col-xs-12 information-item">
+            <img class="information-item-img hidden-xs" src="../img/IMG_0002_light.jpg" alt="真空低温調理法">
+            <p class="information-date">2015.12.28</p>
+            <h3 class="information-item-title">ジビエの調理方法</h3>
+          </div>
+          <div class="col-sm-4 col-xs-12 information-item">
+            <img class="information-item-img hidden-xs" src="../img/IMG_0002_light.jpg" alt="熟成肉">
+            <p class="information-date">2015.12.28</p>
+            <h3 class="information-item-title">熟成させるとおいしくなる</h3>
+          </div>
+          <div class="information-item-more text-center">
+            <button type="button" class="btn btn-default">
+              ＞もっと見る
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- other commodities -->
+    <section class="container-fluid information">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-center">
+          <h2 class="information-title">おすすめの季節の食材</h2>
+        </div>
+      </div>
+      <!-- おすすめ記事：３カラム -->
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="col-sm-4 col-xs-12 information-item">
+            <img class="information-item-img hidden-xs" src="../img/IMG_0002_light.jpg" alt="自然保護">
+            <p class="information-date">2015.12.28</p>
+            <h3 class="information-item-title">タマゴタケ</h3>
+          </div>
+          <div class="col-sm-4 col-xs-12 information-item">
+            <img class="information-item-img hidden-xs" src="../img/IMG_0002_light.jpg" alt="真空低温調理法">
+            <p class="information-date">2015.12.28</p>
+            <h3 class="information-item-title">鮎塩漬け</h3>
+          </div>
+          <div class="col-sm-4 col-xs-12 information-item">
+            <img class="information-item-img hidden-xs" src="../img/IMG_0002_light.jpg" alt="熟成肉">
+            <p class="information-date">2015.12.28</p>
+            <h3 class="information-item-title">ワサビ</h3>
+          </div>
+          <div class="information-item-more text-center">
+            <button type="button" class="btn btn-default">
+              ＞もっと見る
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-footer text-center">
+          <ul class="nav navbar-nav col-sm-12 col-xs-12">
+           <li><a href="#">運営会社 </a></li>
+           <li><a href="#">特定商取引に関する法律に基づく表記</a></li>
+           <li><a href="#">免責事項</a></li>
+           <li><a href="#">お買いものガイド</a></li>
+           <li><a href="#">お問い合わせ</a></li>
+          </ul>
+          <p class="copyright">
+            <small>
+              <a href="/">Copyright (C) 2016 amagi-naturalstore All Rights Reserved.
+              </a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/optional-js.js"></script>
+  </body>
+</html>
