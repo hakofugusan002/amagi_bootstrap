@@ -21,40 +21,48 @@
     <![endif]-->
   </head>
   <body>
-    <!-- main navigatio -->
+    <!-- main navigatio 1 -->
+    <!-- <div class="container">-->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample">
+        <div class="navbar-header haeder-padding">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">タイトル</a>
+          <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo">
+          </a>
         </div>
-    
-        <div class="collapse navbar-collapse" id="navbarEexample">
+
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">ジビエ <span class="sr-only">(current)</span></a></li>
-            <li class="active"><a href="#">キノコ</a></li>
+            <li class="active"><a href="#">ジビエ</a></li>
+            <li><a href="#">キノコ</a></li>
             <li><a href="#">川魚</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">その他の商品 <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">その他の商品<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">リンク・リスト１</a></li>
-                <li><a href="#">リンク・リスト２</a></li>
-                <li><a href="#">リンク・リスト３</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-            <li><a href="#">店長ブログ</a></li> 
-            <li><a href="#">ここで食べられます！</a></li> 
+            <li><a href="#">店長ブログ</a></li>
+            <li><a href="#">ここで食べられます！</a></li>
           </ul>
           <button type="button" class="btn btn-default navbar-btn navbar-right">
-            <span class="glyphicon glyphicon-envelope"></span>&nbsp;お問い合わせ
+           <span class="glyphicon glyphicon-envelope"></span>&nbsp;お問い合わせ
           </button>
         </div>
+        <!--/.nav-collapse -->
       </div>
+      <!--/.container-fluid -->
     </nav>
 
     <!-- contents area -->
@@ -71,7 +79,7 @@
 
     <section class="container-fluid">
       <div class="row">
-        <h2 class="head-line">採れたて食材、発売中！</h2>
+        <h2 class="h2_center">採れたて食材、発売中！</h2>
       </div>
 
       <div class="row">
@@ -81,45 +89,6 @@
         </div>
         <div class="col-sm-10 col-xs-10">
           <!-- カード領域：PC＝３カラム、スマホ＝１カラム -->
-
-<!--
-          <div class="col-sm-4 hidden-xs">
-            <div class="card">
-              <div class="card-img">
-                <p class="card-img-thumb">
-                <img class="thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
-                </p>
-              </div>
-              <div class="card-block">
-                <h4 class="card-block-title">Card title</h4>
-                <p class="card-block-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  this text is for overflow test; 
-                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
-                  その風邪に即戦力
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="visible-xs">
-            <div class="card-xs">
-              <div class="card-xs-img">
-                <p class="card-xs-img-thumb">
-                <img class="thumb-src" src="../img/IMG_0002_light.jpg" alt="Card image cap">
-                </p>
-              </div>
-              <div class="card-xs-block">
-                <h4 class="card-xs-block-title">Card title</h4>
-                <p class="card-xs-block-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  this text is for overflow test; 
-                  辛い人ほど実感できる、アリナミンEXゴールド、ディズニー、１．０、ディズニークラシック・コレクション、ゾフ
-                  その風邪に即戦力
-                </p>
-              </div>
-            </div>
-          </div>
--->
           <div class="col-sm-4 col-xs-12">
             <div class="card">
               <div class="card-img">
@@ -176,16 +145,35 @@
               </div>
             </div>
           </div>
-
 
         </div>
+
         <div class="col-sm-1 col-xs-1">
           <!-- this is bank -->
         </div>
       </div>
 
-     </section>
+    </section>
 
+    <footer class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-footer">
+          <ul class="nav navbar-nav">
+           <li><a href="#">運営会社 </a></li>
+           <li><a href="#">特定商取引に関する法律に基づく表記</a></li>
+           <li><a href="#">免責事項</a></li>
+           <li><a href="#">お買いものガイド</a></li>
+           <li><a href="#">お問い合わせ</a></li>
+          </ul>
+          <p class="copyright">
+            <small>
+              <a href="/">Copyright (C) 2016 amagi-naturalstore All Rights Reserved.
+              </a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
